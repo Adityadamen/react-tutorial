@@ -1,0 +1,130 @@
+const resList = [
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"24-08-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.49,
+      "HIGH_PRICE":10.49,
+      "LOW_PRICE":10.46,
+      "CLOSE_PRICE":10.46,
+      "VOLUME_DATA":10346
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"25-08-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.48,
+      "HIGH_PRICE":10.49,
+      "LOW_PRICE":10.47,
+      "CLOSE_PRICE":10.48,
+      "VOLUME_DATA":42184
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"26-08-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.49,
+      "HIGH_PRICE":10.49,
+      "LOW_PRICE":10.47,
+      "CLOSE_PRICE":10.47,
+      "VOLUME_DATA":4009
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"29-08-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.5,
+      "HIGH_PRICE":10.5,
+      "LOW_PRICE":10.47,
+      "CLOSE_PRICE":10.48,
+      "VOLUME_DATA":15875
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"30-08-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.5,
+      "HIGH_PRICE":10.5,
+      "LOW_PRICE":10.47,
+      "CLOSE_PRICE":10.49,
+      "VOLUME_DATA":19332
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"01-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.49,
+      "HIGH_PRICE":10.5,
+      "LOW_PRICE":10.48,
+      "CLOSE_PRICE":10.48,
+      "VOLUME_DATA":13320
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"02-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.49,
+      "HIGH_PRICE":10.53,
+      "LOW_PRICE":10.49,
+      "CLOSE_PRICE":10.52,
+      "VOLUME_DATA":168383
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"05-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.52,
+      "HIGH_PRICE":10.56,
+      "LOW_PRICE":10.5,
+      "CLOSE_PRICE":10.53,
+      "VOLUME_DATA":308771
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"06-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.54,
+      "HIGH_PRICE":10.54,
+      "LOW_PRICE":10.52,
+      "CLOSE_PRICE":10.53,
+      "VOLUME_DATA":6534
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"07-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.53,
+      "HIGH_PRICE":10.55,
+      "LOW_PRICE":10.51,
+      "CLOSE_PRICE":10.53,
+      "VOLUME_DATA":14487
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"08-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.54,
+      "HIGH_PRICE":10.56,
+      "LOW_PRICE":10.51,
+      "CLOSE_PRICE":10.53,
+      "VOLUME_DATA":14319
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"09-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.55,
+      "HIGH_PRICE":10.55,
+      "LOW_PRICE":10.51,
+      "CLOSE_PRICE":10.53,
+      "VOLUME_DATA":6121
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"12-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.5,
+      "HIGH_PRICE":10.54,
+      "LOW_PRICE":10.5,
+      "CLOSE_PRICE":10.52,
+      "VOLUME_DATA":7643
+  },
+  {
+      "SYMBOL_NAME":"AXISBPSETF",
+      "TRADE_DATE":"13-09-22 12:00:00.000000000 AM",
+      "OPEN_PRICE":10.54,
+      "HIGH_PRICE":10.54,
+      "LOW_PRICE":10.5,
+      "CLOSE_PRICE":10.52,
+      "VOLUME_DATA":9599
+  }
+]
+
+export default resList;
