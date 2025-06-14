@@ -1,36 +1,7 @@
-import RestaurantTable from "./RestaurantCard";
-import { useEffect, useState } from "react";
-import resList from "../utils/mockData";
-import Shimmer from "./Shimmer";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import { useNavigate } from "react-router-dom";
 
 const Body = () => {
-  const [listOfStocks, setListOfStocks] = useState([]);
-  const [filteredStocks, setFilteredStocks] = useState([]);
-  const [searchText, setSearchText] = useState("");
-
-  // Check online status
-  const onlineStatus = useOnlineStatus();
-
-  // Load mock data on component mount
-  useEffect(() => {
-    setListOfStocks(resList);
-    setFilteredStocks(resList);
-  }, []);
-
-  // Handle offline status
-  if (onlineStatus === false) {
-    return (
-      <h1 className="text-center text-red-500 font-bold text-xl">
-        Looks like you are disconnected!!!
-      </h1>
-    );
-  }
-
-  // Show shimmer while data is loading
-  if (listOfStocks.length === 0) {
-    return <Shimmer />;
-  }
+  const navigate = useNavigate();
 
   return (
     <div className="p-4">
@@ -40,24 +11,43 @@ const Body = () => {
           type="text"
           className="border p-2 rounded w-1/2"
           placeholder="Search by Symbol Name..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
         />
-        <button
-          className="px-4 py-2 bg-blue-500 text-white rounded ml-2"
-          onClick={() => {
-            const filtered = listOfStocks.filter((stock) =>
-              stock.SYMBOL_NAME.toLowerCase().includes(searchText.toLowerCase())
-            );
-            setFilteredStocks(filtered);
-          }}
-        >
-          Search
-        </button>
+        <button className="px-4 py-2 bg-blue-500 text-white rounded ml-2">Search</button>
       </div>
 
-      {/* Stock Table */}
-      <RestaurantTable data={filteredStocks} />
+      {/* API Buttons */}
+      <div className="mb-4 flex space-x-4">
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => navigate("/api1")}
+        >
+          API 1
+        </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => navigate("/api2")}
+        >
+          API 2
+        </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => navigate("/api3")}
+        >
+          API 3
+        </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => navigate("/api4")}
+        >
+          API 4
+        </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded"
+          onClick={() => navigate("/api5")}
+        >
+          API 5
+        </button>
+      </div>
     </div>
   );
 };

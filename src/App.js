@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { lazy , Suspense } from "react";
+import Api from "./components/Api";
 //import Grocery from "./components/Grocery";
 
 // Chunking
@@ -55,6 +56,27 @@ const appRouter = createBrowserRouter([
                 path:"/restaurants/:resID",
                 element:<RestaurantMenu/>
             },
+            {
+                path: "/api1",
+                element: <Api apiUrl="http://localhost:8000/api/stocks/data" />,
+              },
+              {
+                path: "/api2",
+                element: <Api apiUrl="http://localhost:8000/api/stocks/data2" />,
+              },
+              {
+                path: "/api3",
+                element: <Api apiUrl="http://localhost:8000/api/stocks/data3" />,
+              },
+              {
+                path: "/api4",
+                element: <Api apiUrl="http://localhost:8000/api/stocks/data4" />,
+              },
+              {
+                path: "/api5",
+                element: <Api apiUrl="http://localhost:8000/api/stocks/data5" />,
+              },
+            
 
         ],
         errorElement:<Error/>
